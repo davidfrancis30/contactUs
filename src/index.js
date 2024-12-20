@@ -15,7 +15,7 @@ const cors = require("cors");
 
 App.use(
 	cors({
-		origin: "127.0.0.1:5500/contact-form-main/design/contactform.html",
+		origin: "127.0.0.1:5500",
 		methods: ["GET", "POST", "PATCH", "DELETE"],
 	})
 ); 
