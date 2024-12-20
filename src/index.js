@@ -13,7 +13,12 @@ const cors = require("cors");
 
 // Enable CORS for all routes with wildcard
 
-App.use(cors({ origin: "127.0.0.1:5500/contact-form-main/design/contactform.html" })); 
+App.use(
+	cors({
+		origin: "127.0.0.1:5500/contact-form-main/design/contactform.html",
+		methods: ["GET", "POST", "PATCH", "DELETE"],
+	})
+); 
 
 App.get("/", (req, res) => {
 	// console.log("Just to make sure it's all running.");
