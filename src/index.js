@@ -13,7 +13,7 @@ const cors = require("cors");
 
 // Enable CORS for all routes with wildcard
 
-app.use(cors({ origin: "*" })); 
+App.use(cors({ origin: "*" })); 
 
 App.get("/", (req, res) => {
 	// console.log("Just to make sure it's all running.");
